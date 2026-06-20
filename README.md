@@ -58,9 +58,10 @@ Installing rocks with native C code needs the MSYS2 GCC. Create a `.cmd` wrapper
 
 ```cmd
 @echo off
-set "BASE=C:\Users\<you>\Scoop\apps\msys2\current\ucrt64"
+set "BASE=%SCOOP%\apps\msys2\current\ucrt64"
 set "PATH=%BASE%\bin;%PATH%"
 set "LIBRARY_PATH=%BASE%\lib;%BASE%\x86_64-w64-mingw32\lib"
+set "C_INCLUDE_PATH=%BASE%\include"
 "C:\Lua\5.4.8\bin\luarocks.exe" %*
 ```
 
@@ -68,5 +69,6 @@ Verify:
 
 ```cmd
 luarocks.cmd install luasocket
+rem set "TEMP=C:\Temp" && set "TMP=C:\Temp" && luarocks.cmd install luasocket
 luarocks list
 ```
