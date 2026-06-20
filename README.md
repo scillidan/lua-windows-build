@@ -33,7 +33,6 @@ exit
 Add the following into PATH:
 
 ```
-C:\Lua\5.4.8
 C:\Lua\5.4.8\bin
 ```
 
