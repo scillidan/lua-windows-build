@@ -1,4 +1,4 @@
-# windows-lua-build
+# lua-windows-build
 
 Build Lua (5.4) from source under MSYS2 UCRT64, with LuaRocks. Works from `cmd.exe` after build.
 
