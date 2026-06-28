@@ -36,18 +36,18 @@ Add the following into PATH:
 C:\Lua\5.4.8\bin
 ```
 
-Open a new cmd window, run `luarocks path --bin`, then use `setx` with each value from the output:
+Open a new cmd window, run `luarocks.exe path --bin`, then use `setx` with each value from the output:
 
 ```cmd
-setx LUA_PATH "C:\Lua\5.4.8\share\lua\5.4\?.lua;C:\Lua\5.4.8\share\lua\5.4\?\init.lua;..."
-setx LUA_CPATH "C:\Lua\5.4.8\lib\lua\5.4\?.dll;..."
+setx LUA_PATH "C:\Lua\5.4.8\share\lua\5.4\?.lua;C:\Lua\5.4.8\share\lua\5.4\?\init.lua...
+setx LUA_CPATH "C:\Lua\5.4.8\lib\lua\5.4\?.dll...
 ```
 
 Open another new cmd window:
 
 ```cmd
 lua -v
-luarocks --version
+luarocks.exe --version
 lua -e "print('ok')"
 ```
 
